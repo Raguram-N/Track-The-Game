@@ -114,7 +114,8 @@ To become the **“Cricket IQ Hub”** for both professionals and fans. A place 
 - [ ] Pro version with weaknesses + career analytics.  
 - [ ] AI-based coaching recommendations.  
 - [ ] Community leaderboard (compare batsmen).  
-- [ ] Expand to bowling profiles in future versions.  
+- [ ] Expand to bowling profiles in future versions.
+- [ ] future enhancemnt for other games too like football, Hockey etc
 
 ---
 
