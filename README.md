@@ -58,12 +58,15 @@ Imagine:
 
 ## 💰 Revenue Potential  
 
-### Hypothetical Scenario  
-- **Target Market Size (conservative):** 10 million cricket enthusiasts worldwide.  
-- **Pro Subscription Price:** $25 (₹2000) per year.  
-- **Conversion Rate:** 2% of users upgrade to Pro.  
+### The cricket  
+- **Target Market Size (conservative):** 10 million cricket enthusiasts worldwide.
+- From local gully cricket to international cricket
+- for gully - to represent country
+- for international players - to dominate the world
 
 ### Calculation  
+- **Pro Subscription Price:** $25 (₹2000) per year.  
+- **Conversion Rate:** 2% of users upgrade to Pro.  
 👉 10,000,000 users × 2% = **200,000 Pro subscribers**  
 👉 200,000 × $25 = **$5,000,000 per year (~₹42 Crores)**  
 
