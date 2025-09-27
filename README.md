@@ -120,8 +120,16 @@ We welcome **developers, data scientists, cricket enthusiasts, and designers** t
 
 ---
 
-## 📂 Repository Purpose  
+## 🔑 Takeaway  
+- **Analyze, Adapt, Achieve — Dominate**  
+
+---
+
+
+### ✍️ Author: RAGURAM NARAYANASWAMY
+
+### 📂 Repository Purpose  
 This repo documents the **case study, prototypes, and development journey** of Track the Game.  
 It will serve as a product innovation portfolio and a base for real-world implementation.  
 
----
+
