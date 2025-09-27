@@ -110,7 +110,7 @@ To become the **“Cricket IQ Hub”** for both professionals and fans. A place 
 ---
 
 ## 📌 Roadmap  
-- [ ] MVP with free version (strengths only).  
+- [ ] Minimum Viable Product with free version (strengths only).  
 - [ ] Pro version with weaknesses + career analytics.  
 - [ ] AI-based coaching recommendations.  
 - [ ] Community leaderboard (compare batsmen).  
