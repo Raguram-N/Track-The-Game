@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Virat Kohli Cricket Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+body {
+font-family: Arial, sans-serif;
+background: #f5f5f5;
+margin: 0;
+padding: 20px;
+text-align: center;
+}
+.container {
+max-width: 900px;
+margin: auto;
+background: #fff;
+padding: 20px;
+border-radius: 12px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+text-align: left;
+}
+h1, h2, h3 { color: #333; }
+h2 { margin-top: 20px; }
+.section { margin-bottom: 25px; padding: 15px; border-radius: 8px; background: #f0f8ff; }
+.premium { background: #fff3cd; border: 1px solid #ffeeba; }
+.btn {
+padding: 10px 20px;
+background: #007bff;
+color: #fff;
+border: none;
+border-radius: 6px;
+cursor: pointer;
+margin-top: 10px;
+}
+.btn:hover { background: #0056b3; }
+.hidden { display: none; }
+canvas { margin-top: 15px; }
+ul { margin: 5px 0 0 20px; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Virat Kohli Cricket Dashboard</h1>
+
+<!-- Free Stats -->
+<div class="section">
+<h2>Basic Stats (Free)</h2>
+<p><b>Total Runs:</b> 5864</p>
+<p><b>Batting Average:</b> 54.80</p>
+<p><b>Matches Played:</b> 68</p>
+<p><b>Centuries:</b> 30</p>
+<h3>Top Strengths</h3>
+<ul>
+<li>Cover Drive: 90%</li>
+<li>Chasing Targets: 85%</li>
+</ul>
+</div>
+
+<!-- Premium Locked -->
+<div id="premium-locked" class="section premium">
+<h2>Premium Insights 🔒</h2>
+<p>Unlock full analysis: strengths, weaknesses, scoring areas, dismissals, career journey & charts.</p>
+<button class="btn" onclick="showPayment()">Upgrade to Pro</button>
+</div>
+
+<!-- Payment Popup -->
+<div id="payment-popup" class="section premium hidden">
+<h2>Dummy Payment Gateway</h2>
+<p>Pay ₹2000/year to unlock full stats (Demo Only)</p>
+<button class="btn" onclick="unlockPro()">Pay Now ✅</button>
+<button class="btn" style="background:#6c757d;" onclick="cancelPayment()">Cancel ❌</button>
+</div>
+
+<!-- Premium Content -->
+<div id="premium-content" class="hidden">
+<!-- Full Stats -->
+<div class="section">
+<h2>Full Stats & Career Journey</h2>
+<p><b>Total Runs:</b> 5864</p>
+<p><b>Batting Average:</b> 54.80</p>
+<p><b>Matches Played:</b> 68</p>
+<p><b>Matches Won:</b> 40</p>
+<p><b>Matches Lost:</b> 17</p>
+<p><b>Centuries:</b> 30</p>
+<p><b>Half-Centuries:</b> 19</p>
+<p><b>Highest Score:</b> 254</p>
+<p><b>Debut:</b> 2008 vs Sri Lanka</p>
+</div>
+
+<!-- Strengths Chart -->
+<div class="section">
+<h3>Strengths vs Bowling Types</h3>
+<canvas id="strengthsChart" width="400" height="250"></canvas>
+</div>
+
+<!-- Weaknesses Chart -->
+<div class="section">
+<h3>Weaknesses</h3>
+<canvas id="weaknessChart" width="400" height="250"></canvas>
+</div>
+
+<!-- Scoring Areas Pie -->
+<div class="section">
+<h3>Scoring Areas Distribution</h3>
+<canvas id="scoringChart" width="400" height="250"></canvas>
+</div>
+
+<!-- Dismissal Types Pie -->
+<div class="section">
+<h3>Dismissal Types</h3>
+<canvas id="dismissalChart" width="400" height="250"></canvas>
+</div>
+</div>
+</div>
+
+<script>
+function showPayment() {
+document.getElementById("premium-locked").classList.add("hidden");
+document.getElementById("payment-popup").classList.remove("hidden");
+}
+function cancelPayment() {
+document.getElementById("payment-popup").classList.add("hidden");
+document.getElementById("premium-locked").classList.remove("hidden");
+}
+function unlockPro() {
+document.getElementById("payment-popup").classList.add("hidden");
+document.getElementById("premium-content").classList.remove("hidden");
+renderCharts();
+}
+
+function renderCharts() {
+// Strengths
+const strengthsCtx = document.getElementById('strengthsChart').getContext('2d');
+new Chart(strengthsCtx, {
+type: 'bar',
+data: {
+labels: ['Cover Drive','Chasing Targets','Spin','Seam'],
+datasets: [{
+label: 'Strength %',
+data: [90,85,80,80],
+backgroundColor: '#4caf50'
+}]
+},
+options: { responsive:true, scales:{y:{beginAtZero:true, max:100}} }
+});
+
+// Weaknesses
+const weaknessCtx = document.getElementById('weaknessChart').getContext('2d');
+new Chart(weaknessCtx, {
+type: 'bar',
+data: {
+labels: ['Swing Bowling','Short-Pitched Balls'],
+datasets: [{
+label: 'Weakness % / Difficulty',
+data: [35, 40],
+backgroundColor: '#f44336'
+}]
+},
+options: { responsive:true, scales:{y:{beginAtZero:true, max:100}} }
+});
+
+// Scoring Areas Pie
+const scoringCtx = document.getElementById('scoringChart').getContext('2d');
+new Chart(scoringCtx, {
+type: 'pie',
+data: {
+labels: ['Cover & Point','Straight Drive','Midwicket Flick','Others'],
+datasets: [{
+data: [40,30,20,10],
+backgroundColor: ['#4caf50','#2196f3','#ff9800','#9c27b0']
+}]
+},
+options: { responsive:true }
+});
+
+// Dismissal Types Pie
+const dismissalCtx = document.getElementById('dismissalChart').getContext('2d');
+new Chart(dismissalCtx, {
+type: 'pie',
+data: {
+labels: ['Caught Behind','LBW','Bowled','Run Out'],
+datasets: [{
+data: [50,30,10,10],
+backgroundColor: ['#f44336','#ff9800','#2196f3','#9c27b0']
+}]
+},
+options: { responsive:true }
+});
+}
+</script>
+</body>
+</html>
