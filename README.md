@@ -92,8 +92,8 @@ Imagine:
 ### The cricket  
 - **Target Market Size (conservative):** 10 million cricket enthusiasts worldwide.
 - From local gully cricket to international cricket
-- for gully - to represent country
-- for international players - to dominate the world
+- for gully cricketer- to represent country
+- for international cricketer - to dominate the world
 
 ### Calculation  
 - **Pro Subscription Price:** $25 (₹2000) per year.  
