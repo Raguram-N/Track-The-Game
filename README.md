@@ -23,6 +23,15 @@ Imagine:
 
 ## 🎯 Features  
 
+<table>
+<tr>
+<td width="40%" align="center" valign="middle">
+
+<img src="generated-image (6).png" width="95%" alt="Just Click - Story Illustration" style="border-radius:10px; box-shadow: 0px 0px 8px rgba(0,0,0,0.2);" />
+
+</td>
+<td width="60%" valign="top">
+
 ### Free Version  
 - ✅ Strength analysis of any batsman.  
 - ✅ Percentage scoring by shot type & region.  
@@ -35,6 +44,10 @@ Imagine:
 - 🔥 Career evolution graph.  
 - 🔥 Personalized coaching suggestions for batsmen.  
 
+  </td>
+</tr>
+</table>
+
 ---
 
 ## Sample intractive Demo: 
@@ -46,6 +59,20 @@ Imagine:
 ---
 
 ## 🌍 Market Potential  
+
+<table>
+<tr>
+<td width="40%" align="center" valign="middle">
+
+<img src="generated-image (2).png" width="95%" alt="Just Click - Story Illustration" style="border-radius:10px; box-shadow: 0px 0px 8px rgba(0,0,0,0.2);" />
+
+</td>
+<td width="60%" valign="top">
+
+ ### The Cricket
+
+> “Cricket is a religion, and Sachin is its God.”
+ 
 - Cricket has a **global audience of 2.5+ billion people**.  
 - Growing professional circuits: IPL, BBL, PSL, CPL, The Hundred, Test cricket.  
 - **Target users:**  
@@ -53,6 +80,10 @@ Imagine:
   - Coaches & analysts 📊  
   - Aspiring batsmen 🏏  
   - Hardcore cricket fans ❤️  
+
+</td>
+</tr>
+</table>
 
 ---
 
